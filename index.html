@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Estructura de Páginas Web</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                color: #fff;
+                padding-top: 30px;
+                min-height: 70px;
+                border-bottom: #fff 3px solid;
+                text-align: center;
+            }
+            nav {
+                background: #444;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+            nav a {
+                color: #fff;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            h1, h2 {
+                color: #333;
+            }
+            h1 {
+                margin: 0;
+            }
+            .content {
+                background: #fff;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            ul li {
+                margin-bottom: 10px;
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            footer {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                padding: 10px 0;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diseño y Estructura de Páginas Web</h1>
+    </header>
+    <nav>
+        <a href="#tabla">Tabla</a>
+        <a href="#tema2">Tema 2</a>
+        <a href="#tema3">Tema 3</a>
+    </nav>
+    <div class="container">
+        <!-- Tabla -->
+        <div id="tabla" class="section content">
+            <h2>Tabla de Conceptos y Descripciones</h2>
+            <table>
+                <tbody><tr>
+                    <th>Concepto</th>
+                    <th>Descripción</th>
+                    <th>Concepto</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Etiqueta table</td>
+                    <td>Define una tabla HTML.</td>
+                    <td>Etiqueta form</td>
+                    <td>Define un formulario HTML para la entrada del usuario.</td>
+                </tr>
+                <tr>
+                    <td>Atributos de table</td>
+                    <td>Incluyen <code>border</code>, <code>cellspacing</code>, <code>cellpadding</code>, <code>width</code>, etc.</td>
+                    <td>Etiqueta input</td>
+                    <td>Define un control de entrada dentro de un formulario.</td>
+                </tr>
+                <tr>
+                    <td>Etiqueta tr</td>
+                    <td>Define una fila en una tabla.</td>
+                    <td>Etiqueta label</td>
+                    <td>Define una etiqueta para un control de entrada en un formulario.</td>
+                </tr>
+                <tr>
+                    <td>Atributo tr</td>
+                    <td>Incluyen <code>align</code>, <code>bgcolor</code>, <code>valign</code>, etc.</td>
+                    <td>Etiqueta select</td>
+                    <td>Define una lista desplegable.</td>
+                </tr>
+                <tr>
+                    <td>Etiqueta td y th</td>
+                    <td><code>td</code> define una celda de datos y <code>th</code> define una celda de encabezado en una tabla.</td>
+                    <td>Etiqueta textarea</td>
+                    <td>Define un área de texto de varias líneas.</td>
+                </tr>
+                <tr>
+                    <td>Atributos de td y th</td>
+                    <td>Incluyen <code>colspan</code>, <code>rowspan</code>, <code>headers</code>, etc.</td>
+                    <td>Etiqueta fieldset, legend</td>
+                    <td><code>fieldset</code> agrupa elementos relacionados en un formulario, <code>legend</code> proporciona un título para el grupo.</td>
+                </tr>
+                <tr>
+                    <td>Tablas avanzadas</td>
+                    <td>Incluyen tablas anidadas, celdas combinadas, y tablas con diseño CSS.</td>
+                    <td>Etiqueta meter</td>
+                    <td>Define una barra de medición.</td>
+                </tr>
+                <tr>
+                    <td>Etiqueta thead</td>
+                    <td>Define un grupo de filas de encabezado en una tabla.</td>
+                    <td>Etiqueta progress</td>
+                    <td>Define una barra de progreso.</td>
+                </tr>
+                <tr>
+                    <td>Etiqueta tfoot</td>
+                    <td>Define un grupo de filas de pie de página en una tabla.</td>
+                    <td>Etiqueta datalist</td>
+                    <td>Define una lista de opciones predefinidas para un control de entrada.</td>
+                </tr>
+                <tr>
+                    <td>Etiqueta tbody</td>
+                    <td>Define un grupo de filas de cuerpo en una tabla.</td>
+                    <td>Etiqueta summary</td>
+                    <td>Proporciona un resumen para los detalles de un elemento.</td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <!-- Tema 2 -->
+        <div id="tema2" class="section content">
+            <h2>Tema 2: Elementos que Componen la Estructuración de una Página Web</h2>
+            <ul>
+                <li><strong>1. Contenedor (wrapper)</strong>
+                    <p>El contenedor es el elemento principal que agrupa todo el contenido de la página. Ayuda a centrar y establecer un ancho fijo o máximo para la página.</p>
+                </li>
+                <li><strong>2. Cabecera (header)</strong>
+                    <p>La cabecera generalmente contiene el logotipo del sitio, el título, y elementos de navegación como el menú principal.</p>
+                </li>
+                <li><strong>3. Contenido (content)</strong>
+                    <p>La sección de contenido es donde se ubica el contenido principal de la página, como texto, imágenes, y otros elementos multimedia.</p>
+                </li>
+                <li><strong>4. Menú (menu)</strong>
+                    <p>El menú proporciona enlaces de navegación que permiten a los usuarios desplazarse a otras partes del sitio web.</p>
+                </li>
+                <li><strong>5. Pie (footer)</strong>
+                    <p>El pie de página suele contener información de contacto, enlaces a políticas de privacidad, y otros enlaces útiles.</p>
+                </li>
+                <li><strong>6. Lateral (sidebar)</strong>
+                    <p>El lateral es una sección de la página que puede contener enlaces adicionales, anuncios, o cualquier otro contenido complementario.</p>
+                </li>
+                <li><strong>7. Etiqueta div</strong>
+                    <p>La etiqueta <code>&lt;div&gt;</code> es un contenedor genérico utilizado para agrupar elementos y aplicar estilos o scripts a un grupo específico de contenido.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tema 3 -->
+        <div id="tema3" class="section content">
+            <h2>Tema 3: Estructuración Semántica de una Página Web</h2>
+            <ul>
+                <li><strong>1. &lt;header&gt;</strong>
+                    <p>Elemento que representa el encabezado de una sección o página, normalmente contiene logotipos, títulos, y menús de navegación.</p>
+                </li>
+                <li><strong>2. &lt;nav&gt;</strong>
+                    <p>Elemento utilizado para contener enlaces de navegación.</p>
+                </li>
+                <li><strong>3. &lt;main&gt;</strong>
+                    <p>Elemento que representa el contenido principal de un documento, debe ser único y no estar anidado dentro de otros elementos de contenido.</p>
+                </li>
+                <li><strong>4. &lt;article&gt;</strong>
+                    <p>Elemento utilizado para contenido que puede ser distribuido de forma independiente, como artículos, publicaciones de blog, etc.</p>
+                </li>
+                <li><strong>5. &lt;section&gt;</strong>
+                    <p>Elemento que define secciones dentro de un documento, cada una con su propio encabezado.</p>
+                </li>
+                <li><strong>6. &lt;aside&gt;</strong>
+                    <p>Elemento que representa contenido secundario relacionado con el contenido principal, como barras laterales o bloques de anuncios.</p>
+                </li>
+                <li><strong>7. &lt;footer&gt;</strong>
+                    <p>Elemento que define el pie de página de una sección o documento, generalmente contiene información de contacto y derechos de autor.</p>
+                </li>
+                <li><strong>8. &lt;h1&gt; a &lt;h6&gt;</strong>
+                    <p>Elementos que definen los encabezados de diferentes niveles, donde <code>&lt;h1&gt;</code> es el encabezado de nivel más alto y <code>&lt;h6&gt;</code> el más bajo.</p>
+                </li>
+                <li><strong>9. &lt;p&gt;</strong>
+                    <p>Elemento que define un párrafo de texto.</p>
+                </li>
+                <li><strong>10. &lt;address&gt;</strong>
+                    <p>Elemento que proporciona información de contacto para su sección o su dueño.</p>
+                </li>
+                <li><strong>11. &lt;time&gt;</strong>
+                    <p>Elemento que representa una fecha o una hora específica, o ambos.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    </body>
+</html>
